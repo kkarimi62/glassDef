@@ -64,6 +64,7 @@ if AnalysisType == 2:
 #                                    reference_frame = reference_frame,
                                     output_nonaffine_squared_displacements=True,
                                     eliminate_cell_deformation=True,
+									cutoff=4.0
                                    )
     d2min.reference.load(RefFile, multiple_frames = True)
     pipeline.modifiers.append(d2min)
@@ -96,6 +97,7 @@ if AnalysisType == 5:
 #                                    reference_frame = reference_frame,
                                     output_strain_tensors=True,
                                     eliminate_cell_deformation=True,
+									cutoff=4.0
                                    )
     strain.reference.load(RefFile, multiple_frames = True)
     pipeline.modifiers.append(strain)
