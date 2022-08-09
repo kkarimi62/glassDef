@@ -10,7 +10,7 @@ if __name__ == '__main__':
         lnums = [ 31, 8 ]
         string=open('machineLearning.py').readlines() #--- python script
 	#---
-        times=np.arange(5,100,5)  #--- run GetFrames(lmpData,times=lmpData.coord_atoms_broken.keys())
+        times=np.arange(10,500,5)  #--- run GetFrames(lmpData,times=lmpData.coord_atoms_broken.keys())
         count = 0
         for itime in times:
 	    
